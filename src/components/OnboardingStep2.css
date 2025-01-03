@@ -1,0 +1,49 @@
+.onboarding-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Tüm ekran yüksekliği */
+    width: 100%; /* Tam genişlik */
+    background-color: #111; /* Arka plan rengi */
+    color: #fff;
+    overflow: hidden; /* Kaydırma çubuğunu gizler */
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 600px; /* İçeriğin genişliğini sınırla */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Şeffaf arka plan */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Hafif gölge efekti */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Başlık boyutunu büyüt */
+    margin-bottom: 20px;
+  }
+  
+  h1 span {
+    color: orange; /* Vurgulanan metin rengi */
+  }
+  
+  p {
+    font-size: 1rem; /* Açıklama yazısı */
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hover efekti */
+  }
+  
+  button:hover {
+    background-color: #e69500; /* Daha koyu turuncu */
+  }
+  

@@ -1,0 +1,128 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Sayfa Düzeni */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Web'e uygun genişlik */
+  position: relative;
+  top: 0;
+}
+
+.header .logo {
+  width: 120px; /* Logo boyutunu %100'e uygun şekilde ayarladık */
+  height: auto;
+}
+
+.back-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #ff7b00;
+}
+
+/* Takvim kısmı ve üst boşluk */
+.calendar-body {
+  margin-top: 20px; /* Header ile takvim arasındaki boşluğu artırıyoruz */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Takvim */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.calendar-cell {
+  background-color: #444;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.calendar-cell:hover {
+  background-color: #ff7b00;
+  color: white;
+}
+
+.calendar-cell.selected {
+  background-color: #ff7b00;
+  color: white;
+}
+
+.calendar-cell.has-tasks {
+  background-color: #ff7b00;
+  color: white;
+}
+
+/* Todo butonları */
+.delete-task-button {
+  background: none;
+  border: none;
+  color: #ff7b00;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.delete-task-button:hover {
+  color: red; /* Çöp kutusu ikonu üzerine gelindiğinde kırmızı olur */
+}
+
+/* Responsive Design - Küçük ekranlar */
+@media (max-width: 768px) {
+  .calendar-body {
+    margin-top: 15px;
+  }
+
+  .calendar-cell {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .calendar-header h1 {
+    font-size: 28px;
+  }
+}

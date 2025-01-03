@@ -1,0 +1,84 @@
+.create-profile-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Tüm ekran yüksekliği */
+    width: 100%; /* Tam genişlik */
+    background-color: #111; /* Arka plan rengi */
+    color: #fff;
+    overflow: hidden; /* Kaydırma çubuğunu gizler */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  h1 span {
+    color: orange;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.8); /* Şeffaf arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Hafif gölge efekti */
+    max-width: 600px; /* İçeriğin genişliğini sınırla */
+    width: 100%; /* Mobil uyumlu genişlik */
+  }
+  
+  input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%; /* Genişliği tam yap */
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border: 2px solid orange; /* Odaklanıldığında turuncu kenarlık */
+  }
+  
+  .gender {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .gender label {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hover efekti */
+  }
+  
+  button:hover {
+    background-color: #e69500; /* Daha koyu turuncu */
+  }
+  

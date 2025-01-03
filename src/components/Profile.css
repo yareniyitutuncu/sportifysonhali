@@ -1,0 +1,82 @@
+/* Profil Sayfası Genel Stil */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* Profil Fotoğrafı ve Düzenleme */
+.profile-pic-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid orange;
+}
+
+.profile-pic-edit {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Profil Bilgileri */
+.profile-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: white;
+  text-align: center;
+}
+
+/* Profil Detayları */
+.profile-details {
+  width: 100%;
+  max-width: 500px; 
+  text-align: left;
+}
+
+.profile-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.profile-details strong {
+  color: orange;
+}
+
+/* Düzenleme Butonu */
+.profile-actions {
+  margin-top: 30px;
+}
+
+.edit-profile-button {
+  background-color: orange;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.edit-profile-button:hover {
+  background-color: #e67e00;
+}

@@ -1,0 +1,31 @@
+.start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tüm ekranı kaplar */
+    width: 100%; /* Tam genişlik */
+    background-image: url("../assets/arkaplan.png");
+    background-size: cover; /* Görselin tam oturmasını sağlar */
+    background-position: center; /* Görseli ortalar */
+    background-repeat: no-repeat; /* Görsel tekrar etmez */
+    color: #fff;
+  }
+  
+  .content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Görsel üzerine şeffaf arka plan */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

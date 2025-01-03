@@ -1,0 +1,145 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Sayfa */
+.healthy-recipes-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 90px;  /* Logo boyutunu buradan ayarlıyoruz */
+  height: auto;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.back-button-small {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.back-button-small:hover {
+  color: orange;
+}
+
+.notifications-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* İçerik */
+.recipe-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.recipe-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: orange;
+  margin: 10px 0;
+}
+
+/* Sekmeler */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tab-button {
+  flex: 1;
+  text-align: center;
+  padding: 10px 15px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: orange;
+  color: #222;
+}
+
+/* Sekme İçerikleri */
+.tab-content {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tab-panel {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.tab-panel ul,
+.tab-panel ol {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.tab-panel ul {
+  list-style-type: disc;
+}
+
+.tab-panel ol {
+  list-style-type: decimal;
+}

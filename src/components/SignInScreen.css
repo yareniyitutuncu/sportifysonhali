@@ -1,0 +1,86 @@
+.signin-screen {
+  background-image: url("../assets/arkaplan.png"); /* Arka plan resminin yolu */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Sayfanın tam yüksekliğini kapsar */
+  width: 100%; /* Sayfanın tam genişliğini kapsar */
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  padding: 0 20px;
+  overflow: hidden; /* Taşan içeriklerin görünmesini engeller */
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.6); /* Gölgeleme */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Şık bir kutu gölgesi */
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc7a00;
+}
+
+button:active {
+  background-color: #995200;
+}
+
+.forgot-signup-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-password-text,
+.signup-text {
+  font-size: 14px;
+}
+
+.forgot-password-button,
+.signup-button {
+  background: none;
+  color: #ff9900;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.forgot-password-button:hover,
+.signup-button:hover {
+  color: #cc7a00;
+}
